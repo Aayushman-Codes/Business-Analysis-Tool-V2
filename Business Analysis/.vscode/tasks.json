@@ -16,7 +16,7 @@
                 "${workspaceFolder}/src/product.c",
                 "${workspaceFolder}/src/trend_analysis.c",
                 "${workspaceFolder}/src/utils.c",
-                "${workspaceFolder}/src/globals.c",  // Add this line
+                "${workspaceFolder}/src/globals.c", 
                 "-I${workspaceFolder}/include",
                 "-Wall",
                 "-Wextra"

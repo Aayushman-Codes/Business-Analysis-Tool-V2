@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Project",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-o",
+                "${workspaceFolder}/bin/bams",
+                "${workspaceFolder}/src/main.c",
+                "${workspaceFolder}/src/billing.c",
+                "${workspaceFolder}/src/customer.c",
+                "${workspaceFolder}/src/financial.c",
+                "${workspaceFolder}/src/product.c",
+                "${workspaceFolder}/src/trend_analysis.c",
+                "${workspaceFolder}/src/utils.c",
+                "${workspaceFolder}/src/globals.c",  // Add this line
+                "-I${workspaceFolder}/include",
+                "-Wall",
+                "-Wextra"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
